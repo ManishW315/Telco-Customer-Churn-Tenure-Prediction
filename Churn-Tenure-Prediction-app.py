@@ -12,7 +12,7 @@ df = pd.read_csv('Telco-Customer-Churn.csv')
 page_bg_img = '''
 <style>
 [data-testid='stAppViewContainer'] {
-background-image: url("https://cutewallpaper.org/27/bright-pink-and-blue-wallpaper/113629115.jpg");
+background-image: url("https://img.freepik.com/premium-vector/grainy-gradient-background-using-different-colors_606954-9.jpg");
 background-size: cover;
 }
 [data-testid='stSidebar'] {
