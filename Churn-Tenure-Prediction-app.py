@@ -143,14 +143,15 @@ with col1:
     st.subheader('Customer Information')
     st.dataframe(input_df.T, height=320)
 with col2:
-    st.subheader('Estimated Tenure')
-    st.write('#####', tenure_prediction, 'Months')
-    st.text("")
-    st.text("")
-    st.text("")
+    if churn_prediction == 'Yes':
+        st.subheader('Estimated Tenure')
+        st.write('#####', tenure_prediction, 'Months')
+        st.text("")
+        st.text("")
+        st.text("")
     if churn_prediction == 'No':
         st.subheader('The Customer will not churn')
         st.write('##### The probability of the customer not churning is',(churn_prediction_proba[:, 0][0]*100).round(2), '%')
-    else:
+    if churn_prediction == 'Yes':
         st.subheader('The Customer will probably churn')
         st.write('##### The probability of the customer churning is', (churn_prediction_proba[:, 1][0] * 100).round(2), '%')
