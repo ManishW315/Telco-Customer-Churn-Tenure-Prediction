@@ -16,7 +16,7 @@ background-image: url("https://img.freepik.com/premium-vector/grainy-gradient-ba
 background-size: cover;
 }
 [data-testid='stSidebar'] {
-background-color: rgba(180, 230, 250, 0.5);
+background-color: rgba(80, 30, 50, 0.5);
 }
 
 </style>
